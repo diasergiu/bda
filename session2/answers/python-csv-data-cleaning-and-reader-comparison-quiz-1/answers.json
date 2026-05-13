@@ -1,0 +1,266 @@
+{
+  "quiz_title": "Python CSV Data Cleaning and Reader Comparison Quiz",
+  "score": 8,
+  "score_total": 10,
+  "total_questions": 10,
+  "answers": [
+    {
+      "question_title": "Question 1",
+      "question_text": "What is the main difference between `csv.reader` and `csv.DictReader`?",
+      "selected_indexes": [
+        2
+      ],
+      "selected_labels": "2. `csv.reader` uses indexes, while `csv.DictReader` uses column names",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        2
+      ],
+      "correct_labels": "2. `csv.reader` uses indexes, while `csv.DictReader` uses column names",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": true,
+      "result_label": "Correct",
+      "answer_correct": true,
+      "question_points": 1,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "`csv.reader` returns rows as lists accessed by index, while `csv.DictReader` returns rows as dictionaries accessed by column name."
+    },
+    {
+      "question_title": "Question 2",
+      "question_text": "What does `csv.DictWriter(file, fieldnames=...)` do?",
+      "selected_indexes": [
+        2
+      ],
+      "selected_labels": "2. Writes rows as dictionaries using explicit column names",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        2
+      ],
+      "correct_labels": "2. Writes rows as dictionaries using explicit column names",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": true,
+      "result_label": "Correct",
+      "answer_correct": true,
+      "question_points": 1,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "`csv.DictWriter` is used to write rows as dictionaries with named columns."
+    },
+    {
+      "question_title": "Question 3",
+      "question_text": "How does missing data often appear in CSV files?",
+      "selected_indexes": [
+        3
+      ],
+      "selected_labels": "3. As `\"\"` (empty string)",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        3
+      ],
+      "correct_labels": "3. As `\"\"` (empty string)",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": true,
+      "result_label": "Correct",
+      "answer_correct": true,
+      "question_points": 1,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "In this session, missing values are treated as empty strings."
+    },
+    {
+      "question_title": "Question 4",
+      "question_text": "Which of the following actions are part of the cleaning workflow in this session?",
+      "selected_indexes": [
+        1,
+        2,
+        3
+      ],
+      "selected_labels": "1. Load data with `csv.DictReader`; 2. Replace missing values; 3. Save cleaned data back to disk",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        1,
+        2,
+        3
+      ],
+      "correct_labels": "1. Load data with `csv.DictReader`; 2. Replace missing values; 3. Save cleaned data back to disk",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": true,
+      "result_label": "Correct",
+      "answer_correct": true,
+      "question_points": 1,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "The focus is on reading, cleaning, and writing CSV data, not training models."
+    },
+    {
+      "question_title": "Question 5",
+      "question_text": "Why is `DictReader` often better for readability and maintenance?",
+      "selected_indexes": [
+        3
+      ],
+      "selected_labels": "3. Because it automatically validates all data",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        2
+      ],
+      "correct_labels": "2. Because column names are clearer than remembering numeric indexes",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": false,
+      "result_label": "Wrong",
+      "answer_correct": false,
+      "question_points": 0,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "Using column names makes the code easier to read and maintain."
+    },
+    {
+      "question_title": "Question 6",
+      "question_text": "Why does the cleaning example first save raw data, then reopen it, and save a fixed version?",
+      "selected_indexes": [
+        1
+      ],
+      "selected_labels": "1. To practice a realistic read-clean-write workflow",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        1
+      ],
+      "correct_labels": "1. To practice a realistic read-clean-write workflow",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": true,
+      "result_label": "Correct",
+      "answer_correct": true,
+      "question_points": 1,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "This mirrors a common workflow where raw data is loaded, cleaned, and then written back out."
+    },
+    {
+      "question_title": "Question 7",
+      "question_text": "Which dataset is used in this session?",
+      "selected_indexes": [
+        3
+      ],
+      "selected_labels": "3. `Birkbeck/studio_ghibli_movies`",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        3
+      ],
+      "correct_labels": "3. `Birkbeck/studio_ghibli_movies`",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": true,
+      "result_label": "Correct",
+      "answer_correct": true,
+      "question_points": 1,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "Part 2 uses the `Birkbeck/studio_ghibli_movies` dataset."
+    },
+    {
+      "question_title": "Question 8",
+      "question_text": "Which missing field is specifically mentioned in the session tasks?",
+      "selected_indexes": [
+        2
+      ],
+      "selected_labels": "2. `music_by` for Howl's Moving Castle",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        2
+      ],
+      "correct_labels": "2. `music_by` for Howl's Moving Castle",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": true,
+      "result_label": "Correct",
+      "answer_correct": true,
+      "question_points": 1,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "The task asks students to find the missing `music_by` value for `Howl's Moving Castle`."
+    },
+    {
+      "question_title": "Question 9",
+      "question_text": "What is the time and space complexity of a single-pass cleaning script that stores cleaned rows before writing?",
+      "selected_indexes": [
+        3
+      ],
+      "selected_labels": "3. Time O(n), Space O(1)",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        4
+      ],
+      "correct_labels": "4. Time O(n), Space O(n)",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": false,
+      "result_label": "Wrong",
+      "answer_correct": false,
+      "question_points": 0,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "The script scans all rows once and stores cleaned rows in memory before writing them, so time is O(n) and space is O(n)."
+    },
+    {
+      "question_title": "Question 10",
+      "question_text": "Which of the following are good outputs of this session?",
+      "selected_indexes": [
+        1,
+        2,
+        3
+      ],
+      "selected_labels": "1. A cleaned `studio_ghibli_movies_clean.csv`; 2. A short comparison of `csv.reader` vs `csv.DictReader`; 3. A report of time and space complexity",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        1,
+        2,
+        3
+      ],
+      "correct_labels": "1. A cleaned `studio_ghibli_movies_clean.csv`; 2. A short comparison of `csv.reader` vs `csv.DictReader`; 3. A report of time and space complexity",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": true,
+      "result_label": "Correct",
+      "answer_correct": true,
+      "question_points": 1,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "The session asks students to clean and save the dataset, compare reader styles, and report complexity."
+    }
+  ]
+}

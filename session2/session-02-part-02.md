@@ -89,7 +89,11 @@ for key, value in person.items():
 To run this tutorial, first download `movies.csv` from the Hugging Face repo: [Birkbeck/movies](https://huggingface.co/datasets/Birkbeck/movies)
 
 ```bash
+<<<<<<< HEAD
 hf download Birkbeck/movies movies.csv --repo-type dataset --local-dir .
+=======
+hf download Birkbeck/studio_ghibli_movies studio_ghibli_movies.csv --repo-type dataset --local-dir .
+>>>>>>> 5702c8d (week1 week2)
 ```
 
 Expected result: `movies.csv` appears in your current folder.
@@ -270,7 +274,24 @@ hf download Birkbeck/movies_incomplete movies.csv --repo-type dataset --local-di
 1. Find the missing data point and print row and column.
 2. Find the average of `votes` from `data/movies_incomplete/movies.csv`. Why does the naive script fail? How can you fix it?
 
+<<<<<<< HEAD
 #### 10. Quiz
+=======
+1. Load the file with `csv.DictReader`.
+2. Print all rows where `year` is missing.
+3. Replace missing `year` values with the correct year (you should research and complete the correct data).
+4. Find the row where `music_by` is missing (`Howl's Moving Castle`).
+5. Find the composer on Wikipedia and complete `music_by` with the correct name.
+6. Save the cleaned dataset as `studio_ghibli_movies_clean.csv`.
+7. In a short note, compare `csv.reader` vs `csv.DictReader` for readability and maintenance.
+8. Report time and space complexity of your cleaning script.
+O(n) O(n) i save in a list
+
+Note: the research step is intentional. The missing years/composer are not fully inferable from the CSV alone, so you are expected to use an external source (for example Wikipedia or an official filmography source).
+Quick validation checklist: add a source URL next to each filled value, mark confidence (high/medium/low), and confirm at least one second source before saving your final cleaned file.
+
+#### 9. Quiz
+>>>>>>> 5702c8d (week1 week2)
 
 Complete the following quiz.
 

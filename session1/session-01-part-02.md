@@ -309,7 +309,9 @@ matrix = [
 ```
 
 5. In one short comment, explain why resetting the column index is important in nested loops.
+    for in python works like a foreach. for item in array ( for each element in array) for item in range(len(array))  "range(len(array))"sends a list from 0 to len(array). 
 6. What are the time and space complexities of your script(s)?
+O(n) n - number of elements
 
 #### 10. Quiz
 

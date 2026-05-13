@@ -170,7 +170,12 @@ Tasks:
 2. Print the first 5 rows only.
 3. Find and print the first movie where `genres` contains `Action`, then stop.
 4. State one benefit and one limitation of using raw `csv.reader`.
+From AI 
+Benefit: The csv.reader module correctly implements the CSV format, handling complex elements like quoted fields, escaping, and embedded newlines that naive string splitting would fail to parse. 
+
+Limitation: It returns an iterator (generator) rather than loading the entire dataset into memory, which means the underlying file must remain open while iterating, or the data must be consumed immediately into a list or other structure.
 5. What are the time and space complexities of your script(s)?
+O(n)
 
 #### 8. Exercise 2
 
@@ -187,6 +192,8 @@ Identify:
 - which row is problematic
 - which column is affected
 - what the issue is
+
+multiple genres
 
 This dataset may also contain a file named `movies.csv`. If you download it into the same folder, you can overwrite your original `movies.csv`.
 

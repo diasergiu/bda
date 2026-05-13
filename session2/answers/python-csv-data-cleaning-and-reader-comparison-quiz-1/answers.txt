@@ -1,0 +1,92 @@
+Quiz: Python CSV Data Cleaning and Reader Comparison Quiz
+Score: 8/10
+
+Question 1
+What is the main difference between `csv.reader` and `csv.DictReader`?
+Selected: 2. `csv.reader` uses indexes, while `csv.DictReader` uses column names
+Correct: 2. `csv.reader` uses indexes, while `csv.DictReader` uses column names
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: `csv.reader` returns rows as lists accessed by index, while `csv.DictReader` returns rows as dictionaries accessed by column name.
+
+Question 2
+What does `csv.DictWriter(file, fieldnames=...)` do?
+Selected: 2. Writes rows as dictionaries using explicit column names
+Correct: 2. Writes rows as dictionaries using explicit column names
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: `csv.DictWriter` is used to write rows as dictionaries with named columns.
+
+Question 3
+How does missing data often appear in CSV files?
+Selected: 3. As `""` (empty string)
+Correct: 3. As `""` (empty string)
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: In this session, missing values are treated as empty strings.
+
+Question 4
+Which of the following actions are part of the cleaning workflow in this session?
+Selected: 1. Load data with `csv.DictReader`; 2. Replace missing values; 3. Save cleaned data back to disk
+Correct: 1. Load data with `csv.DictReader`; 2. Replace missing values; 3. Save cleaned data back to disk
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: The focus is on reading, cleaning, and writing CSV data, not training models.
+
+Question 5
+Why is `DictReader` often better for readability and maintenance?
+Selected: 3. Because it automatically validates all data
+Correct: 2. Because column names are clearer than remembering numeric indexes
+Imposters flagged: -
+Expected imposters: -
+Result: Wrong
+Explanation: Using column names makes the code easier to read and maintain.
+
+Question 6
+Why does the cleaning example first save raw data, then reopen it, and save a fixed version?
+Selected: 1. To practice a realistic read-clean-write workflow
+Correct: 1. To practice a realistic read-clean-write workflow
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: This mirrors a common workflow where raw data is loaded, cleaned, and then written back out.
+
+Question 7
+Which dataset is used in this session?
+Selected: 3. `Birkbeck/studio_ghibli_movies`
+Correct: 3. `Birkbeck/studio_ghibli_movies`
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: Part 2 uses the `Birkbeck/studio_ghibli_movies` dataset.
+
+Question 8
+Which missing field is specifically mentioned in the session tasks?
+Selected: 2. `music_by` for Howl's Moving Castle
+Correct: 2. `music_by` for Howl's Moving Castle
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: The task asks students to find the missing `music_by` value for `Howl's Moving Castle`.
+
+Question 9
+What is the time and space complexity of a single-pass cleaning script that stores cleaned rows before writing?
+Selected: 3. Time O(n), Space O(1)
+Correct: 4. Time O(n), Space O(n)
+Imposters flagged: -
+Expected imposters: -
+Result: Wrong
+Explanation: The script scans all rows once and stores cleaned rows in memory before writing them, so time is O(n) and space is O(n).
+
+Question 10
+Which of the following are good outputs of this session?
+Selected: 1. A cleaned `studio_ghibli_movies_clean.csv`; 2. A short comparison of `csv.reader` vs `csv.DictReader`; 3. A report of time and space complexity
+Correct: 1. A cleaned `studio_ghibli_movies_clean.csv`; 2. A short comparison of `csv.reader` vs `csv.DictReader`; 3. A report of time and space complexity
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: The session asks students to clean and save the dataset, compare reader styles, and report complexity.
