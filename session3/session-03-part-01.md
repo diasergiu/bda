@@ -186,9 +186,13 @@ Copy this skeleton into `session3/solutions/exercise-03-01.py`:
 ```python
 TEXT_FILE = "les_miserables.txt"
 
-with open(TEXT_FILE, "r", encoding="utf-8") as file:
-    # Provide here your solution
-    ...
+def printLineUntill(numLines):
+    with open("les_miserables.txt", "r", encoding="utf-8") as file:
+        it = iter(file)
+        for _ in range(numLines):
+            print(next(it))
+
+printLineUntill(1)
 ```
 
 > [!TIP]

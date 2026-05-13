@@ -1,0 +1,98 @@
+Quiz: Streaming and Generators Theory Quiz
+Score: 8/10
+
+Question 1
+In Python, what is an iterable?
+Selected: 2. An object that Python can loop over
+Correct: 2. An object that Python can loop over
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: An iterable is something Python can loop over, such as a list, string, file, or generator.
+
+Question 2
+What does an iterator remember?
+Selected: 1. Its current position in a sequence
+Correct: 1. Its current position in a sequence
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: An iterator remembers where it is, so repeated calls to `next()` move forward through the values.
+
+Question 3
+Which statements about file iteration are correct? Select two.
+Selected: 2. Looping over a file reads one line at a time; 4. A file object can be used with `iter()` and `next()`
+Correct: 2. Looping over a file reads one line at a time; 4. A file object can be used with `iter()` and `next()`
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: Files can be streamed line by line, and file objects are iterable. `readlines()` loads all lines and is not required for looping.
+
+Question 4
+For the task "print only the first line of a large file", which strategy is usually best?
+Selected: 4. Stream the file and read one line
+Correct: 4. Stream the file and read one line
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: Only the first line is needed, so streaming avoids unnecessary memory use.
+
+Question 5
+Which tasks usually require loading all selected data into memory? Select two.
+Selected: 1. Sort every line alphabetically; 4. Count all lines
+Correct: 1. Sort every line alphabetically; 2. Access line 10,000 many times
+Imposters flagged: -
+Expected imposters: -
+Result: Wrong
+Explanation: Sorting needs the lines together, and repeated random access is easier after loading. First-line printing and counting can stream.
+
+Question 6
+What does `yield` do in a generator function?
+Selected: 3. It gives one value, pauses the function, and can continue later
+Correct: 3. It gives one value, pauses the function, and can continue later
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: `yield` produces one value at a time and keeps the function state for the next request.
+
+Question 7
+Which statements about `yield` and `return` are correct? Select two.
+Selected: 2. `return` gives back one final value and stops the function; 4. `yield` can produce a sequence of values over time
+Correct: 2. `return` gives back one final value and stops the function; 4. `yield` can produce a sequence of values over time
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: `return` ends the function, while `yield` lets a generator produce values one at a time. `yield` does not magically make all work constant time.
+
+Question 8
+You count all lines in a file by looping over the file and keeping only a counter.
+
+What is the extra space complexity?
+Selected: 3. O(1), ignoring the current line buffer
+Correct: 3. O(1), ignoring the current line buffer
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: The program keeps a fixed number of variables, so the extra space is constant apart from the current line being read.
+
+Question 9
+You search for the first line containing `"Jean Valjean"` and stop with `break` when it is found.
+
+Which statements are correct? Select two.
+Selected: 2. The best case can be fast if the match is near the start; 3. The worst case may still check every line
+Correct: 2. The best case can be fast if the match is near the start; 3. The worst case may still check every line
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: `break` lets the search stop early, but if the match is late or missing, the loop may inspect the whole file.
+
+Question 10
+A generator yields non-empty lines from a very large text file. Another loop counts how many yielded lines contain `"Jean"`.
+
+Which complexity description is most accurate?
+Selected: 2. Space is always O(n), because generators store every yielded value
+Correct: 4. Time can be O(total characters checked), and extra space can stay small
+Imposters flagged: -
+Expected imposters: -
+Result: Wrong
+Explanation: The program may still inspect many characters, but it can avoid storing the whole file by processing one yielded line at a time.

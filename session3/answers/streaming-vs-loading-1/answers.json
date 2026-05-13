@@ -1,0 +1,146 @@
+{
+  "quiz_title": "Streaming vs Loading",
+  "score": 3,
+  "score_total": 5,
+  "total_questions": 5,
+  "answers": [
+    {
+      "question_title": "Question 1",
+      "question_text": "Read the code.\n\n```python\nnumbers = [1, 2, 3]\nit = iter(numbers)\n\nprint(next(it))\nprint(next(it))\n```\n\nWhich output does this code produce?",
+      "selected_indexes": [
+        2
+      ],
+      "selected_labels": "2. 1 then 2",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        2
+      ],
+      "correct_labels": "2. 1 then 2",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": true,
+      "result_label": "Correct",
+      "answer_correct": true,
+      "question_points": 1,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "The iterator remembers its position, so the first `next(it)` gives `1` and the second gives `2`.",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    },
+    {
+      "question_title": "Question 2",
+      "question_text": "Read the code.\n\n```python\nwith open(\"les_miserables.txt\", \"r\", encoding=\"utf-8\") as file:\n    lines = file.readlines()\n\nprint(lines[100])\n```\n\nWhich description best matches this code?",
+      "selected_indexes": [
+        4
+      ],
+      "selected_labels": "4. It loads all lines before using an index",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        4
+      ],
+      "correct_labels": "4. It loads all lines before using an index",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": true,
+      "result_label": "Correct",
+      "answer_correct": true,
+      "question_points": 1,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "`readlines()` stores all lines in a list, which then allows indexing with `lines[100]`.",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    },
+    {
+      "question_title": "Question 3",
+      "question_text": "Read the code.\n\n```python\nfound = None\n\nwith open(\"les_miserables.txt\", \"r\", encoding=\"utf-8\") as file:\n    for line in file:\n        if \"Jean Valjean\" in line:\n            found = line\n            break\n\nprint(found)\n```\n\nWhat is the main benefit of `break` here?",
+      "selected_indexes": [
+        1
+      ],
+      "selected_labels": "1. It stops reading after the first match is found",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        1
+      ],
+      "correct_labels": "1. It stops reading after the first match is found",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": true,
+      "result_label": "Correct",
+      "answer_correct": true,
+      "question_points": 1,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "Once the first matching line is found, `break` stops the loop so the rest of the file does not need to be read.",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    },
+    {
+      "question_title": "Question 4",
+      "question_text": "Read both snippets.\n\n```python\n# A\ncount = 0\nwith open(\"les_miserables.txt\", \"r\", encoding=\"utf-8\") as file:\n    for line in file:\n        count += 1\nprint(count)\n```\n\n```python\n# B\ntotal_length = 0\ncount = 0\nwith open(\"les_miserables.txt\", \"r\", encoding=\"utf-8\") as file:\n    for line in file:\n        total_length += len(line)\n        count += 1\nprint(total_length / count)\n```\n\nWhich statement is correct?",
+      "selected_indexes": [],
+      "selected_labels": "",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        3
+      ],
+      "correct_labels": "3. Both process one line at a time without storing the whole file",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": false,
+      "result_label": "Wrong",
+      "answer_correct": false,
+      "question_points": 0,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "Both snippets loop over the file directly and keep only small variables such as counters and totals.",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    },
+    {
+      "question_title": "Question 5",
+      "question_text": "Read the code.\n\n```python\ndef non_empty_lines(path):\n    with open(path, \"r\", encoding=\"utf-8\") as file:\n        for line in file:\n            line = line.strip()\n            if line != \"\":\n                yield line\n\nfor line in non_empty_lines(\"les_miserables.txt\"):\n    print(line)\n    break\n```\n\nWhich description best matches this code?",
+      "selected_indexes": [
+        3
+      ],
+      "selected_labels": "3. `break` makes the generator load all remaining lines",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        2
+      ],
+      "correct_labels": "2. The generator produces non-empty lines one at a time",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": false,
+      "result_label": "Wrong",
+      "answer_correct": false,
+      "question_points": 0,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "The generator uses `yield` to produce one non-empty line at a time, and the loop stops after printing the first one.",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    }
+  ]
+}
