@@ -9,6 +9,7 @@ import queue
 from datetime import datetime
 import sounddevice as sd
 from vosk import Model, KaldiRecognizer
+import time 
 
 
 MODEL_PATH = "vosk-model-en-us-0.22-lgraph"
@@ -29,7 +30,7 @@ recognizer = KaldiRecognizer(model, SAMPLE_RATE)
 
 def record_and_transcribe():
     print("Start speaking. Press Ctrl+C to stop.")
-
+    start_time = time.perf_counter()
     full_text = ""
 
     try:
@@ -52,8 +53,9 @@ def record_and_transcribe():
 
     except KeyboardInterrupt:
         print("\nStopped recording.")
-
+    end_time = time.perf_counter()
     # Very important: get the final remaining text.
     final_result = json.loads(recognizer.FinalResult())
-    final_text = final_result.get("text", "")
-    return final_text
+    final_raw_text = final_result.get("text", "")
+    duration = end_time - start_time
+    return final_raw_text, duration
