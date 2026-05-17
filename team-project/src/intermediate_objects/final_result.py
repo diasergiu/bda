@@ -1,3 +1,4 @@
+# base class for the final result of the processing, which will be saved to a csv file
 class FinalResult:
     def __init__(self, timestamp: str, name_speaker: str, raw_text: str):
         # Required at creation time — you have these from the transcript
