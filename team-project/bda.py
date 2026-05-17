@@ -1,8 +1,9 @@
-from src.gemini_correct import ask_gemini_to_correct
-from src.vosk_microphone import record_and_transcribe
-from src.save_files import save_transcript
+from src.Processing_files.gemini_correct import ask_gemini_to_correct
+from src.Processing_files.vosk_microphone import record_and_transcribe
+from src.save_files import save_final_result
+from src.intermediate_objects.final_result import FinalResult
+from src.Processing_files.process_raw_text import process_raw_text
 from datetime import datetime
-from src.final_result import FinalResult
 
 if __name__ == "__main__":
    
@@ -16,3 +17,5 @@ if __name__ == "__main__":
         print("Original transcript:", raw_text)
         final_result.text_after_correction = ask_gemini_to_correct(raw_text) # use gemini to correct the raw text
         print("Corrected transcript:", final_result.text_after_correction)
+        process_raw_text(final_result) # process the text to get the information we want to save
+        save_final_result(final_result) # save the final result to a csv file

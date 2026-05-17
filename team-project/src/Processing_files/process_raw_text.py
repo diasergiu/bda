@@ -1,4 +1,4 @@
-import final_result
+from src.intermediate_objects.final_result import FinalResult
 
 def process_raw_text(final_result):
     final_result.is_question = is_question(final_result.text_after_correction)
@@ -18,13 +18,13 @@ def is_question(text):
         else:
             return False
         
-def count_words(text):
+def count_words(text): # 
     return len(text.split(' ')) # This is a simple word count based on spaces. It may not be the most efficient method
 
 def count_characters(text):
     char_count = 0
     for char in text:
-        if char > 64 and char < 91 or char > 96 and char < 123: # Only count letters, ignore spaces and punctuation
+        if ord(char) > 64 and ord(char) < 91 or ord(char) > 96 and ord(char) < 123: # Only count letters, ignore spaces and punctuation
             char_count += 1
     return char_count
 

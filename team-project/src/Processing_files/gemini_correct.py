@@ -19,7 +19,7 @@ def ask_gemini_to_correct(text_to_correct):
     prompt = (
         "Correct this transcript. Return only the corrected sentence:\n"
         f"{text_to_correct}"
-    )
+    ) # question to send to gemini
     response = client.models.generate_content(model=MODEL_NAME, contents=prompt)
     return response.text
 

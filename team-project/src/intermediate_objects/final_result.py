@@ -10,7 +10,11 @@ class FinalResult:
         self.is_question: bool | None = None
         self.num_words: int | None = None
         self.text_size_chars: int | None = None
-        self.speaker_turn_id: int | None = None
+        # self.speaker_turn_id: int | None = None
+
+    def create_final_result(self, timestamp: str, name_speaker: str, raw_text: str) -> FinalResult:
+        # how do you make a constructor in python?
+        return FinalResult(timestamp, name_speaker, raw_text)
 
     def to_csv_row(self) -> list:
         return [
@@ -21,7 +25,7 @@ class FinalResult:
             self.is_question,
             self.num_words,
             self.text_size_chars,
-            self.speaker_turn_id,
+            # self.speaker_turn_id,
         ]
 
 

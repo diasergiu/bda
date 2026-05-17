@@ -1,6 +1,6 @@
 import csv
 import os
-from final_result import FinalResult
+from src.intermediate_objects.final_result import FinalResult
 
 def save_transcript(transcript, filename="raw_transcript.txt"):
     with open(filename, "a", encoding="utf-8") as f:
