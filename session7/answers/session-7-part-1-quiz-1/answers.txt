@@ -1,0 +1,78 @@
+Quiz: Session 7 Part 1 quiz
+Score: 7/8
+
+Question 1
+What is a pandas DataFrame?
+Selected: 2. A table-like object with rows and columns.
+Correct: 2. A table-like object with rows and columns.
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: A DataFrame is a labelled table of data.
+
+Question 2
+Which command loads `Movies.json` into pandas?
+Selected: 2. `pd.read_json("datasets/Movies.json")`
+Correct: 2. `pd.read_json("datasets/Movies.json")`
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: JSON files can be loaded with `pd.read_json`.
+
+Question 3
+What does `movies.shape` show?
+Selected: 3. The number of rows and columns.
+Correct: 3. The number of rows and columns.
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: `shape` returns `(rows, columns)`.
+
+Question 4
+Which command shows the data type of each column?
+Selected: 1. `movies.dtypes`
+Correct: 1. `movies.dtypes`
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: `dtypes` lists the inferred type of each column.
+
+Question 5
+What does this code do?
+
+```python
+movies[movies["IMDB Rating"] >= 8]
+```
+Selected: 2. It filters rows where `IMDB Rating` is at least 8.
+Correct: 2. It filters rows where `IMDB Rating` is at least 8.
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: The condition keeps only rows where the rating is greater than or equal to 8.
+
+Question 6
+Why should you inspect a dataset before cleaning it?
+Selected: 4. To remove all missing values automatically.
+Correct: 1. To understand columns, types, and possible problems.
+Imposters flagged: -
+Expected imposters: -
+Result: Wrong
+Explanation: Inspection helps you decide what cleaning is appropriate.
+
+Question 7
+Which method counts how often each value appears in a column?
+Selected: 1. `value_counts()`
+Correct: 1. `value_counts()`
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: `value_counts()` counts values in a Series.
+
+Question 8
+Which command sorts movies by `IMDB Rating` from highest to lowest?
+Selected: 1. `movies.sort_values("IMDB Rating", ascending=False)`
+Correct: 1. `movies.sort_values("IMDB Rating", ascending=False)`
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: `ascending=False` sorts the largest values first.

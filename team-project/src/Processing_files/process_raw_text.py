@@ -33,4 +33,11 @@ def get_speach_rate_wps(word_count, duration):
         return word_count / duration
     else:
         return 0
+
+# from 
+def get_speaker_turn_id(dict_users, name): # this function is not testes
+    if name in dict_users:
+        return dict_users[name].spoken_times + 1
+    else: # need to add the user to user_file if they are a new speaker
+        return 1
     

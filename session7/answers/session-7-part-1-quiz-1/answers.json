@@ -1,0 +1,232 @@
+{
+  "quiz_title": "Session 7 Part 1 quiz",
+  "score": 7,
+  "score_total": 8,
+  "total_questions": 8,
+  "answers": [
+    {
+      "question_title": "Question 1",
+      "question_text": "What is a pandas DataFrame?",
+      "selected_indexes": [
+        2
+      ],
+      "selected_labels": "2. A table-like object with rows and columns.",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        2
+      ],
+      "correct_labels": "2. A table-like object with rows and columns.",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": true,
+      "result_label": "Correct",
+      "answer_correct": true,
+      "question_points": 1,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "A DataFrame is a labelled table of data.",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    },
+    {
+      "question_title": "Question 2",
+      "question_text": "Which command loads `Movies.json` into pandas?",
+      "selected_indexes": [
+        2
+      ],
+      "selected_labels": "2. `pd.read_json(\"datasets/Movies.json\")`",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        2
+      ],
+      "correct_labels": "2. `pd.read_json(\"datasets/Movies.json\")`",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": true,
+      "result_label": "Correct",
+      "answer_correct": true,
+      "question_points": 1,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "JSON files can be loaded with `pd.read_json`.",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    },
+    {
+      "question_title": "Question 3",
+      "question_text": "What does `movies.shape` show?",
+      "selected_indexes": [
+        3
+      ],
+      "selected_labels": "3. The number of rows and columns.",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        3
+      ],
+      "correct_labels": "3. The number of rows and columns.",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": true,
+      "result_label": "Correct",
+      "answer_correct": true,
+      "question_points": 1,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "`shape` returns `(rows, columns)`.",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    },
+    {
+      "question_title": "Question 4",
+      "question_text": "Which command shows the data type of each column?",
+      "selected_indexes": [
+        1
+      ],
+      "selected_labels": "1. `movies.dtypes`",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        1
+      ],
+      "correct_labels": "1. `movies.dtypes`",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": true,
+      "result_label": "Correct",
+      "answer_correct": true,
+      "question_points": 1,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "`dtypes` lists the inferred type of each column.",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    },
+    {
+      "question_title": "Question 5",
+      "question_text": "What does this code do?\n\n```python\nmovies[movies[\"IMDB Rating\"] >= 8]\n```",
+      "selected_indexes": [
+        2
+      ],
+      "selected_labels": "2. It filters rows where `IMDB Rating` is at least 8.",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        2
+      ],
+      "correct_labels": "2. It filters rows where `IMDB Rating` is at least 8.",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": true,
+      "result_label": "Correct",
+      "answer_correct": true,
+      "question_points": 1,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "The condition keeps only rows where the rating is greater than or equal to 8.",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    },
+    {
+      "question_title": "Question 6",
+      "question_text": "Why should you inspect a dataset before cleaning it?",
+      "selected_indexes": [
+        4
+      ],
+      "selected_labels": "4. To remove all missing values automatically.",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        1
+      ],
+      "correct_labels": "1. To understand columns, types, and possible problems.",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": false,
+      "result_label": "Wrong",
+      "answer_correct": false,
+      "question_points": 0,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "Inspection helps you decide what cleaning is appropriate.",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    },
+    {
+      "question_title": "Question 7",
+      "question_text": "Which method counts how often each value appears in a column?",
+      "selected_indexes": [
+        1
+      ],
+      "selected_labels": "1. `value_counts()`",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        1
+      ],
+      "correct_labels": "1. `value_counts()`",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": true,
+      "result_label": "Correct",
+      "answer_correct": true,
+      "question_points": 1,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "`value_counts()` counts values in a Series.",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    },
+    {
+      "question_title": "Question 8",
+      "question_text": "Which command sorts movies by `IMDB Rating` from highest to lowest?",
+      "selected_indexes": [
+        1
+      ],
+      "selected_labels": "1. `movies.sort_values(\"IMDB Rating\", ascending=False)`",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        1
+      ],
+      "correct_labels": "1. `movies.sort_values(\"IMDB Rating\", ascending=False)`",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": true,
+      "result_label": "Correct",
+      "answer_correct": true,
+      "question_points": 1,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "`ascending=False` sorts the largest values first.",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    }
+  ]
+}
