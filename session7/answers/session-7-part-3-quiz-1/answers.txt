@@ -1,0 +1,61 @@
+Quiz: Session 7 Part 3 quiz
+Score: 6/6
+
+Question 1
+What is NumPy mainly used for?
+Selected: 1. Fast numeric work with arrays.
+Correct: 1. Fast numeric work with arrays.
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: NumPy is designed for efficient numeric arrays and calculations.
+
+Question 2
+What is the common import alias for NumPy?
+Selected: 1. `import numpy as np`
+Correct: 1. `import numpy as np`
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: NumPy is almost always imported with the alias `np`.
+
+Question 3
+What does `array.shape` show?
+Selected: 1. The size of the array in each dimension.
+Correct: 1. The size of the array in each dimension.
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: `shape` describes the dimensions of the array.
+
+Question 4
+What is a vectorised operation?
+Selected: 1. An operation applied to many values at once.
+Correct: 1. An operation applied to many values at once.
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: Vectorised operations let NumPy calculate across arrays without an explicit Python loop.
+
+Question 5
+What does this code print?
+
+```python
+scores = np.array([70, 85, 90])
+print(scores[scores >= 80])
+```
+Selected: 1. `[85 90]`
+Correct: 1. `[85 90]`
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: The boolean condition keeps only values greater than or equal to 80.
+
+Question 6
+How can you convert a pandas column to a NumPy array?
+Selected: 1. `df["column"].to_numpy()`
+Correct: 1. `df["column"].to_numpy()`
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: pandas Series objects have a `to_numpy()` method.

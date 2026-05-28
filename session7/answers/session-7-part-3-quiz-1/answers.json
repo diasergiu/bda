@@ -1,0 +1,176 @@
+{
+  "quiz_title": "Session 7 Part 3 quiz",
+  "score": 6,
+  "score_total": 6,
+  "total_questions": 6,
+  "answers": [
+    {
+      "question_title": "Question 1",
+      "question_text": "What is NumPy mainly used for?",
+      "selected_indexes": [
+        1
+      ],
+      "selected_labels": "1. Fast numeric work with arrays.",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        1
+      ],
+      "correct_labels": "1. Fast numeric work with arrays.",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": true,
+      "result_label": "Correct",
+      "answer_correct": true,
+      "question_points": 1,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "NumPy is designed for efficient numeric arrays and calculations.",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    },
+    {
+      "question_title": "Question 2",
+      "question_text": "What is the common import alias for NumPy?",
+      "selected_indexes": [
+        1
+      ],
+      "selected_labels": "1. `import numpy as np`",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        1
+      ],
+      "correct_labels": "1. `import numpy as np`",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": true,
+      "result_label": "Correct",
+      "answer_correct": true,
+      "question_points": 1,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "NumPy is almost always imported with the alias `np`.",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    },
+    {
+      "question_title": "Question 3",
+      "question_text": "What does `array.shape` show?",
+      "selected_indexes": [
+        1
+      ],
+      "selected_labels": "1. The size of the array in each dimension.",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        1
+      ],
+      "correct_labels": "1. The size of the array in each dimension.",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": true,
+      "result_label": "Correct",
+      "answer_correct": true,
+      "question_points": 1,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "`shape` describes the dimensions of the array.",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    },
+    {
+      "question_title": "Question 4",
+      "question_text": "What is a vectorised operation?",
+      "selected_indexes": [
+        1
+      ],
+      "selected_labels": "1. An operation applied to many values at once.",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        1
+      ],
+      "correct_labels": "1. An operation applied to many values at once.",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": true,
+      "result_label": "Correct",
+      "answer_correct": true,
+      "question_points": 1,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "Vectorised operations let NumPy calculate across arrays without an explicit Python loop.",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    },
+    {
+      "question_title": "Question 5",
+      "question_text": "What does this code print?\n\n```python\nscores = np.array([70, 85, 90])\nprint(scores[scores >= 80])\n```",
+      "selected_indexes": [
+        1
+      ],
+      "selected_labels": "1. `[85 90]`",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        1
+      ],
+      "correct_labels": "1. `[85 90]`",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": true,
+      "result_label": "Correct",
+      "answer_correct": true,
+      "question_points": 1,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "The boolean condition keeps only values greater than or equal to 80.",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    },
+    {
+      "question_title": "Question 6",
+      "question_text": "How can you convert a pandas column to a NumPy array?",
+      "selected_indexes": [
+        1
+      ],
+      "selected_labels": "1. `df[\"column\"].to_numpy()`",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        1
+      ],
+      "correct_labels": "1. `df[\"column\"].to_numpy()`",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": true,
+      "result_label": "Correct",
+      "answer_correct": true,
+      "question_points": 1,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "pandas Series objects have a `to_numpy()` method.",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    }
+  ]
+}

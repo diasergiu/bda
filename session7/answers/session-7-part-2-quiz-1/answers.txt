@@ -1,0 +1,74 @@
+Quiz: Session 7 Part 2 quiz
+Score: 7/8
+
+Question 1
+What does `movies.isnull().sum()` show?
+Selected: 2. Missing values per column.
+Correct: 2. Missing values per column.
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: `isnull()` marks missing values and `sum()` counts them by column.
+
+Question 2
+Why might you use `movies.copy()` before cleaning?
+Selected: 1. To test cleaning steps without changing the original DataFrame.
+Correct: 1. To test cleaning steps without changing the original DataFrame.
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: A copy lets you experiment while preserving the raw data.
+
+Question 3
+Which method can fill missing values?
+Selected: 1. `fillna()`
+Correct: 1. `fillna()`
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: `fillna()` replaces missing values with a chosen value.
+
+Question 4
+What does `value_counts(dropna=False)` do?
+Selected: 1. Counts values and includes missing values in the count.
+Correct: 1. Counts values and includes missing values in the count.
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: `dropna=False` keeps missing values visible in the count.
+
+Question 5
+Which statement is the safest?
+Selected: 2. Always delete rows with missing values.
+Correct: 3. Decide how to handle missing values based on the column and analysis goal.
+Imposters flagged: -
+Expected imposters: -
+Result: Wrong
+Explanation: Missing-value handling is a data decision, not an automatic rule.
+
+Question 6
+What is one risk of filling missing ratings with the mean?
+Selected: 1. It can hide missingness and reduce variation in the data.
+Correct: 1. It can hide missingness and reduce variation in the data.
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: Mean filling can make the data look cleaner than it really is.
+
+Question 7
+What does interpolation do?
+Selected: 1. Estimates missing numeric values between known values.
+Correct: 1. Estimates missing numeric values between known values.
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: Interpolation estimates missing numeric values using surrounding values.
+
+Question 8
+When is interpolation most likely to make sense?
+Selected: 1. When rows have a meaningful order, such as weeks or time.
+Correct: 1. When rows have a meaningful order, such as weeks or time.
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: Interpolation depends on order, so it is most suitable for ordered numeric data.

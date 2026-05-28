@@ -1,0 +1,232 @@
+{
+  "quiz_title": "Session 7 Part 2 quiz",
+  "score": 7,
+  "score_total": 8,
+  "total_questions": 8,
+  "answers": [
+    {
+      "question_title": "Question 1",
+      "question_text": "What does `movies.isnull().sum()` show?",
+      "selected_indexes": [
+        2
+      ],
+      "selected_labels": "2. Missing values per column.",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        2
+      ],
+      "correct_labels": "2. Missing values per column.",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": true,
+      "result_label": "Correct",
+      "answer_correct": true,
+      "question_points": 1,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "`isnull()` marks missing values and `sum()` counts them by column.",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    },
+    {
+      "question_title": "Question 2",
+      "question_text": "Why might you use `movies.copy()` before cleaning?",
+      "selected_indexes": [
+        1
+      ],
+      "selected_labels": "1. To test cleaning steps without changing the original DataFrame.",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        1
+      ],
+      "correct_labels": "1. To test cleaning steps without changing the original DataFrame.",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": true,
+      "result_label": "Correct",
+      "answer_correct": true,
+      "question_points": 1,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "A copy lets you experiment while preserving the raw data.",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    },
+    {
+      "question_title": "Question 3",
+      "question_text": "Which method can fill missing values?",
+      "selected_indexes": [
+        1
+      ],
+      "selected_labels": "1. `fillna()`",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        1
+      ],
+      "correct_labels": "1. `fillna()`",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": true,
+      "result_label": "Correct",
+      "answer_correct": true,
+      "question_points": 1,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "`fillna()` replaces missing values with a chosen value.",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    },
+    {
+      "question_title": "Question 4",
+      "question_text": "What does `value_counts(dropna=False)` do?",
+      "selected_indexes": [
+        1
+      ],
+      "selected_labels": "1. Counts values and includes missing values in the count.",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        1
+      ],
+      "correct_labels": "1. Counts values and includes missing values in the count.",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": true,
+      "result_label": "Correct",
+      "answer_correct": true,
+      "question_points": 1,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "`dropna=False` keeps missing values visible in the count.",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    },
+    {
+      "question_title": "Question 5",
+      "question_text": "Which statement is the safest?",
+      "selected_indexes": [
+        2
+      ],
+      "selected_labels": "2. Always delete rows with missing values.",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        3
+      ],
+      "correct_labels": "3. Decide how to handle missing values based on the column and analysis goal.",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": false,
+      "result_label": "Wrong",
+      "answer_correct": false,
+      "question_points": 0,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "Missing-value handling is a data decision, not an automatic rule.",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    },
+    {
+      "question_title": "Question 6",
+      "question_text": "What is one risk of filling missing ratings with the mean?",
+      "selected_indexes": [
+        1
+      ],
+      "selected_labels": "1. It can hide missingness and reduce variation in the data.",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        1
+      ],
+      "correct_labels": "1. It can hide missingness and reduce variation in the data.",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": true,
+      "result_label": "Correct",
+      "answer_correct": true,
+      "question_points": 1,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "Mean filling can make the data look cleaner than it really is.",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    },
+    {
+      "question_title": "Question 7",
+      "question_text": "What does interpolation do?",
+      "selected_indexes": [
+        1
+      ],
+      "selected_labels": "1. Estimates missing numeric values between known values.",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        1
+      ],
+      "correct_labels": "1. Estimates missing numeric values between known values.",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": true,
+      "result_label": "Correct",
+      "answer_correct": true,
+      "question_points": 1,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "Interpolation estimates missing numeric values using surrounding values.",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    },
+    {
+      "question_title": "Question 8",
+      "question_text": "When is interpolation most likely to make sense?",
+      "selected_indexes": [
+        1
+      ],
+      "selected_labels": "1. When rows have a meaningful order, such as weeks or time.",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        1
+      ],
+      "correct_labels": "1. When rows have a meaningful order, such as weeks or time.",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": true,
+      "result_label": "Correct",
+      "answer_correct": true,
+      "question_points": 1,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "Interpolation depends on order, so it is most suitable for ordered numeric data.",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    }
+  ]
+}
