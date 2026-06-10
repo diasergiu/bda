@@ -1,0 +1,288 @@
+{
+  "quiz_title": "Session 8 Part 3 Quiz (Local PySpark Setup)",
+  "score": 8,
+  "score_total": 10,
+  "total_questions": 10,
+  "answers": [
+    {
+      "question_title": "Question 1",
+      "question_text": "Why does local PySpark need Java?",
+      "selected_indexes": [
+        1
+      ],
+      "selected_labels": "1. Spark runs on the Java Virtual Machine",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        1
+      ],
+      "correct_labels": "1. Spark runs on the Java Virtual Machine",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": true,
+      "result_label": "Correct",
+      "answer_correct": true,
+      "question_points": 1,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "Local Spark uses the JVM, and PySpark communicates with it from Python.",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    },
+    {
+      "question_title": "Question 2",
+      "question_text": "Which command checks the installed Java version?",
+      "selected_indexes": [
+        1
+      ],
+      "selected_labels": "1. `java -version`",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        1
+      ],
+      "correct_labels": "1. `java -version`",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": true,
+      "result_label": "Correct",
+      "answer_correct": true,
+      "question_points": 1,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "`java -version` prints the Java version if Java is installed.",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    },
+    {
+      "question_title": "Question 3",
+      "question_text": "Why create a virtual environment?",
+      "selected_indexes": [
+        1
+      ],
+      "selected_labels": "1. To keep this session's Python dependencies separate",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        1
+      ],
+      "correct_labels": "1. To keep this session's Python dependencies separate",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": true,
+      "result_label": "Correct",
+      "answer_correct": true,
+      "question_points": 1,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "A virtual environment isolates project packages.",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    },
+    {
+      "question_title": "Question 4",
+      "question_text": "Which command installs the session requirements?",
+      "selected_indexes": [
+        1
+      ],
+      "selected_labels": "1. `pip install -r requirements.txt`",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        1
+      ],
+      "correct_labels": "1. `pip install -r requirements.txt`",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": true,
+      "result_label": "Correct",
+      "answer_correct": true,
+      "question_points": 1,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "`pip install -r requirements.txt` installs packages listed in the requirements file.",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    },
+    {
+      "question_title": "Question 5",
+      "question_text": "Where should students run `python3 solutions/exercise-08-03.py` from?",
+      "selected_indexes": [
+        4
+      ],
+      "selected_labels": "4. From the operating system trash",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        1
+      ],
+      "correct_labels": "1. Inside the `session8` folder",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": false,
+      "result_label": "Wrong",
+      "answer_correct": false,
+      "question_points": 0,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "Running from `session8` keeps relative paths and session instructions simple.",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    },
+    {
+      "question_title": "Question 6",
+      "question_text": "What should the local verification script do?",
+      "selected_indexes": [
+        1
+      ],
+      "selected_labels": "1. Start Spark, create a small DataFrame, summarize it, and stop Spark",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        1
+      ],
+      "correct_labels": "1. Start Spark, create a small DataFrame, summarize it, and stop Spark",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": true,
+      "result_label": "Correct",
+      "answer_correct": true,
+      "question_points": 1,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "The local script checks that PySpark can start and run a small job.",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    },
+    {
+      "question_title": "Question 7",
+      "question_text": "What should you check first if PySpark cannot start locally?",
+      "selected_indexes": [
+        1
+      ],
+      "selected_labels": "1. Whether Java works with `java -version`",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        1
+      ],
+      "correct_labels": "1. Whether Java works with `java -version`",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": true,
+      "result_label": "Correct",
+      "answer_correct": true,
+      "question_points": 1,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "Missing or incompatible Java is a common local Spark setup issue.",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    },
+    {
+      "question_title": "Question 8",
+      "question_text": "Which file lists the local dependencies for Session 8?",
+      "selected_indexes": [
+        3
+      ],
+      "selected_labels": "3. `spark.lock`",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        1
+      ],
+      "correct_labels": "1. `requirements.txt`",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": false,
+      "result_label": "Wrong",
+      "answer_correct": false,
+      "question_points": 0,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "The requirements file lists packages to install with pip.",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    },
+    {
+      "question_title": "Question 9",
+      "question_text": "What does `spark.stop()` do in the local verification script?",
+      "selected_indexes": [
+        1
+      ],
+      "selected_labels": "1. Releases the Spark session resources",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        1
+      ],
+      "correct_labels": "1. Releases the Spark session resources",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": true,
+      "result_label": "Correct",
+      "answer_correct": true,
+      "question_points": 1,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "`spark.stop()` shuts down the Spark session created by the script.",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    },
+    {
+      "question_title": "Question 10",
+      "question_text": "If Python says it cannot find `solutions/exercise-08-03.py`, what should you check?",
+      "selected_indexes": [
+        1
+      ],
+      "selected_labels": "1. That you are running the command from inside the `session8` folder",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        1
+      ],
+      "correct_labels": "1. That you are running the command from inside the `session8` folder",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": true,
+      "result_label": "Correct",
+      "answer_correct": true,
+      "question_points": 1,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "The command in the tutorial assumes the terminal is currently inside `session8`.",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    }
+  ]
+}

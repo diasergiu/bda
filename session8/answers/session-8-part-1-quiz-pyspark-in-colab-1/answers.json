@@ -1,0 +1,286 @@
+{
+  "quiz_title": "Session 8 Part 1 Quiz (PySpark in Colab)",
+  "score": 8,
+  "score_total": 10,
+  "total_questions": 10,
+  "answers": [
+    {
+      "question_title": "Question 1",
+      "question_text": "What is PySpark?",
+      "selected_indexes": [
+        1
+      ],
+      "selected_labels": "1. A Python API for Apache Spark",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        1
+      ],
+      "correct_labels": "1. A Python API for Apache Spark",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": true,
+      "result_label": "Correct",
+      "answer_correct": true,
+      "question_points": 1,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "PySpark lets Python code use Apache Spark.",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    },
+    {
+      "question_title": "Question 2",
+      "question_text": "Why are we using Google Colab in Part 1?",
+      "selected_indexes": [
+        1
+      ],
+      "selected_labels": "1. So students can run PySpark without local Spark installation",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        1
+      ],
+      "correct_labels": "1. So students can run PySpark without local Spark installation",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": true,
+      "result_label": "Correct",
+      "answer_correct": true,
+      "question_points": 1,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "Colab provides a temporary environment where PySpark can be installed and practiced quickly.",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    },
+    {
+      "question_title": "Question 3",
+      "question_text": "Which object is the main entry point for PySpark work in this session?",
+      "selected_indexes": [
+        1
+      ],
+      "selected_labels": "1. SparkSession",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        1
+      ],
+      "correct_labels": "1. SparkSession",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": true,
+      "result_label": "Correct",
+      "answer_correct": true,
+      "question_points": 1,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "`SparkSession` is used to create DataFrames and run Spark operations.",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    },
+    {
+      "question_title": "Question 4",
+      "question_text": "Which command creates a Spark DataFrame from Python rows and column names?",
+      "selected_indexes": [
+        1
+      ],
+      "selected_labels": "1. `spark.createDataFrame(rows, columns)`",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        1
+      ],
+      "correct_labels": "1. `spark.createDataFrame(rows, columns)`",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": true,
+      "result_label": "Correct",
+      "answer_correct": true,
+      "question_points": 1,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "`createDataFrame` creates a Spark DataFrame from local Python data.",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    },
+    {
+      "question_title": "Question 5",
+      "question_text": "What does `df.printSchema()` show?",
+      "selected_indexes": [
+        2
+      ],
+      "selected_labels": "2. Column names and data types",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        2
+      ],
+      "correct_labels": "2. Column names and data types",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": true,
+      "result_label": "Correct",
+      "answer_correct": true,
+      "question_points": 1,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "The schema describes the DataFrame columns and their types.",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    },
+    {
+      "question_title": "Question 6",
+      "question_text": "Which operation filters students with scores of at least 90?",
+      "selected_indexes": [
+        1
+      ],
+      "selected_labels": "1. `df.filter(df[\"score\"] >= 90)`",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        1
+      ],
+      "correct_labels": "1. `df.filter(df[\"score\"] >= 90)`",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": true,
+      "result_label": "Correct",
+      "answer_correct": true,
+      "question_points": 1,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "`filter` keeps rows that match the condition.",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    },
+    {
+      "question_title": "Question 7",
+      "question_text": "What does `withColumn` do?",
+      "selected_indexes": [
+        1
+      ],
+      "selected_labels": "1. Adds or replaces a column",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        1
+      ],
+      "correct_labels": "1. Adds or replaces a column",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": true,
+      "result_label": "Correct",
+      "answer_correct": true,
+      "question_points": 1,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "`withColumn` returns a DataFrame with a new or replaced column.",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    },
+    {
+      "question_title": "Question 8",
+      "question_text": "Which function is used in Part 1 to calculate average score by track?",
+      "selected_indexes": [
+        1
+      ],
+      "selected_labels": "1. `avg`",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        1
+      ],
+      "correct_labels": "1. `avg`",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": true,
+      "result_label": "Correct",
+      "answer_correct": true,
+      "question_points": 1,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "`avg` is an aggregate function imported from `pyspark.sql.functions`.",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    },
+    {
+      "question_title": "Question 9",
+      "question_text": "Why should we call `spark.stop()` at the end?",
+      "selected_indexes": [],
+      "selected_labels": "",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        1
+      ],
+      "correct_labels": "1. To release the Spark session resources",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": false,
+      "result_label": "Wrong",
+      "answer_correct": false,
+      "question_points": 0,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "Stopping Spark releases resources used by the Spark session.",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    },
+    {
+      "question_title": "Question 10",
+      "question_text": "Which statement best describes Spark local mode in this session?",
+      "selected_indexes": [
+        2
+      ],
+      "selected_labels": "2. Spark always uses a remote production cluster",
+      "selected_imposters": [],
+      "selected_imposter_labels": "",
+      "correct_indexes": [
+        1
+      ],
+      "correct_labels": "1. Spark runs on the current machine for practice",
+      "expected_imposters": [],
+      "expected_imposter_labels": "",
+      "is_correct": false,
+      "result_label": "Wrong",
+      "answer_correct": false,
+      "question_points": 0,
+      "question_max_points": 1,
+      "imposter_true_positive": 0,
+      "imposter_false_positive": 0,
+      "imposter_false_negative": 0,
+      "explanation": "`local[*]` runs Spark locally, which is useful for learning.",
+      "lifelines_used": [],
+      "current_points_after_question": 0,
+      "guaranteed_points_after_question": 0
+    }
+  ]
+}

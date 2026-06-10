@@ -1,0 +1,92 @@
+Quiz: Session 8 Part 1 Quiz (PySpark in Colab)
+Score: 8/10
+
+Question 1
+What is PySpark?
+Selected: 1. A Python API for Apache Spark
+Correct: 1. A Python API for Apache Spark
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: PySpark lets Python code use Apache Spark.
+
+Question 2
+Why are we using Google Colab in Part 1?
+Selected: 1. So students can run PySpark without local Spark installation
+Correct: 1. So students can run PySpark without local Spark installation
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: Colab provides a temporary environment where PySpark can be installed and practiced quickly.
+
+Question 3
+Which object is the main entry point for PySpark work in this session?
+Selected: 1. SparkSession
+Correct: 1. SparkSession
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: `SparkSession` is used to create DataFrames and run Spark operations.
+
+Question 4
+Which command creates a Spark DataFrame from Python rows and column names?
+Selected: 1. `spark.createDataFrame(rows, columns)`
+Correct: 1. `spark.createDataFrame(rows, columns)`
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: `createDataFrame` creates a Spark DataFrame from local Python data.
+
+Question 5
+What does `df.printSchema()` show?
+Selected: 2. Column names and data types
+Correct: 2. Column names and data types
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: The schema describes the DataFrame columns and their types.
+
+Question 6
+Which operation filters students with scores of at least 90?
+Selected: 1. `df.filter(df["score"] >= 90)`
+Correct: 1. `df.filter(df["score"] >= 90)`
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: `filter` keeps rows that match the condition.
+
+Question 7
+What does `withColumn` do?
+Selected: 1. Adds or replaces a column
+Correct: 1. Adds or replaces a column
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: `withColumn` returns a DataFrame with a new or replaced column.
+
+Question 8
+Which function is used in Part 1 to calculate average score by track?
+Selected: 1. `avg`
+Correct: 1. `avg`
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: `avg` is an aggregate function imported from `pyspark.sql.functions`.
+
+Question 9
+Why should we call `spark.stop()` at the end?
+Selected: No answer
+Correct: 1. To release the Spark session resources
+Imposters flagged: -
+Expected imposters: -
+Result: Wrong
+Explanation: Stopping Spark releases resources used by the Spark session.
+
+Question 10
+Which statement best describes Spark local mode in this session?
+Selected: 2. Spark always uses a remote production cluster
+Correct: 1. Spark runs on the current machine for practice
+Imposters flagged: -
+Expected imposters: -
+Result: Wrong
+Explanation: `local[*]` runs Spark locally, which is useful for learning.

@@ -1,0 +1,92 @@
+Quiz: Session 8 Part 3 Quiz (Local PySpark Setup)
+Score: 8/10
+
+Question 1
+Why does local PySpark need Java?
+Selected: 1. Spark runs on the Java Virtual Machine
+Correct: 1. Spark runs on the Java Virtual Machine
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: Local Spark uses the JVM, and PySpark communicates with it from Python.
+
+Question 2
+Which command checks the installed Java version?
+Selected: 1. `java -version`
+Correct: 1. `java -version`
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: `java -version` prints the Java version if Java is installed.
+
+Question 3
+Why create a virtual environment?
+Selected: 1. To keep this session's Python dependencies separate
+Correct: 1. To keep this session's Python dependencies separate
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: A virtual environment isolates project packages.
+
+Question 4
+Which command installs the session requirements?
+Selected: 1. `pip install -r requirements.txt`
+Correct: 1. `pip install -r requirements.txt`
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: `pip install -r requirements.txt` installs packages listed in the requirements file.
+
+Question 5
+Where should students run `python3 solutions/exercise-08-03.py` from?
+Selected: 4. From the operating system trash
+Correct: 1. Inside the `session8` folder
+Imposters flagged: -
+Expected imposters: -
+Result: Wrong
+Explanation: Running from `session8` keeps relative paths and session instructions simple.
+
+Question 6
+What should the local verification script do?
+Selected: 1. Start Spark, create a small DataFrame, summarize it, and stop Spark
+Correct: 1. Start Spark, create a small DataFrame, summarize it, and stop Spark
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: The local script checks that PySpark can start and run a small job.
+
+Question 7
+What should you check first if PySpark cannot start locally?
+Selected: 1. Whether Java works with `java -version`
+Correct: 1. Whether Java works with `java -version`
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: Missing or incompatible Java is a common local Spark setup issue.
+
+Question 8
+Which file lists the local dependencies for Session 8?
+Selected: 3. `spark.lock`
+Correct: 1. `requirements.txt`
+Imposters flagged: -
+Expected imposters: -
+Result: Wrong
+Explanation: The requirements file lists packages to install with pip.
+
+Question 9
+What does `spark.stop()` do in the local verification script?
+Selected: 1. Releases the Spark session resources
+Correct: 1. Releases the Spark session resources
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: `spark.stop()` shuts down the Spark session created by the script.
+
+Question 10
+If Python says it cannot find `solutions/exercise-08-03.py`, what should you check?
+Selected: 1. That you are running the command from inside the `session8` folder
+Correct: 1. That you are running the command from inside the `session8` folder
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: The command in the tutorial assumes the terminal is currently inside `session8`.

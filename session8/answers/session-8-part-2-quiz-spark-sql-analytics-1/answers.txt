@@ -1,0 +1,92 @@
+Quiz: Session 8 Part 2 Quiz (Spark SQL Analytics)
+Score: 10/10
+
+Question 1
+What does `createOrReplaceTempView("orders")` do?
+Selected: 1. Registers a DataFrame so it can be queried with SQL
+Correct: 1. Registers a DataFrame so it can be queried with SQL
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: A temporary view lets Spark SQL query a DataFrame by name.
+
+Question 2
+Which command runs a SQL query in PySpark?
+Selected: 1. `spark.sql("SELECT * FROM orders")`
+Correct: 1. `spark.sql("SELECT * FROM orders")`
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: `spark.sql(...)` runs SQL and returns a Spark DataFrame.
+
+Question 3
+What does `WHERE` do in SQL?
+Selected: 1. Filters rows
+Correct: 1. Filters rows
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: `WHERE` keeps rows that match a condition.
+
+Question 4
+Which SQL clause creates summaries by category or city?
+Selected: 1. GROUP BY
+Correct: 1. GROUP BY
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: `GROUP BY` groups rows so aggregate functions can summarize each group.
+
+Question 5
+Which expression calculates revenue in the session dataset?
+Selected: 1. `quantity * unit_price`
+Correct: 1. `quantity * unit_price`
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: Revenue is quantity multiplied by unit price.
+
+Question 6
+Which SQL query finds total revenue by city?
+Selected: 1. `SELECT city, SUM(revenue) FROM orders GROUP BY city`
+Correct: 1. `SELECT city, SUM(revenue) FROM orders GROUP BY city`
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: The query groups rows by city and sums revenue in each group.
+
+Question 7
+What does `ORDER BY total_revenue DESC` do?
+Selected: 1. Sorts results from highest total revenue to lowest
+Correct: 1. Sorts results from highest total revenue to lowest
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: `DESC` sorts descending.
+
+Question 8
+Which aggregate function counts rows?
+Selected: 1. COUNT
+Correct: 1. COUNT
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: `COUNT(*)` counts rows in a group or query result.
+
+Question 9
+Why compare SQL syntax with DataFrame syntax?
+Selected: 1. Both can answer analytics questions, and each style is useful in different situations
+Correct: 1. Both can answer analytics questions, and each style is useful in different situations
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: Spark supports both SQL and DataFrame APIs.
+
+Question 10
+What happens to a temporary view when the Spark session stops?
+Selected: 1. It is gone
+Correct: 1. It is gone
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: Temporary views live only inside the current Spark session.
