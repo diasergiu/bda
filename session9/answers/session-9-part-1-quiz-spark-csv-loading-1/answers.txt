@@ -1,0 +1,92 @@
+Quiz: Session 9 Part 1 Quiz (Spark CSV Loading)
+Score: 10/10
+
+Question 1
+Why do we define an explicit schema before loading the CSV?
+Selected: 1. To control column data types instead of relying on Spark guesses
+Correct: 1. To control column data types instead of relying on Spark guesses
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: An explicit schema helps Spark read timestamps and numeric columns correctly.
+
+Question 2
+Which option tells Spark that the first CSV row contains column names?
+Selected: 1. `.option("header", True)`
+Correct: 1. `.option("header", True)`
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: `header=True` uses the first row as column names.
+
+Question 3
+Which Spark type is appropriate for `event_time`?
+Selected: 1. TimestampType
+Correct: 1. TimestampType
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: `TimestampType` stores date and time values.
+
+Question 4
+What does `events_df.printSchema()` show?
+Selected: 1. Column names and data types
+Correct: 1. Column names and data types
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: `printSchema` shows the DataFrame structure.
+
+Question 5
+Which command counts rows in the DataFrame?
+Selected: 1. `events_df.count()`
+Correct: 1. `events_df.count()`
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: `count()` triggers Spark to count rows.
+
+Question 6
+What does `createOrReplaceTempView("service_events")` do?
+Selected: 1. Gives the DataFrame a SQL name for the current Spark session
+Correct: 1. Gives the DataFrame a SQL name for the current Spark session
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: A temporary view lets Spark SQL query the DataFrame by name.
+
+Question 7
+Which query lists the distinct services?
+Selected: 1. `SELECT DISTINCT service FROM service_events`
+Correct: 1. `SELECT DISTINCT service FROM service_events`
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: `SELECT DISTINCT` returns unique values.
+
+Question 8
+What happens to a temporary view when Spark stops?
+Selected: 1. It disappears
+Correct: 1. It disappears
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: Temporary views live only inside the current Spark session.
+
+Question 9
+Which final project step is most similar to Part 1?
+Selected: 1. Loading the cleaned market CSV and checking schema, row count, and columns
+Correct: 1. Loading the cleaned market CSV and checking schema, row count, and columns
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: The final project Spark section starts by loading and verifying the cleaned CSV.
+
+Question 10
+Why should Spark be stopped at the end?
+Selected: 1. To release Spark session resources
+Correct: 1. To release Spark session resources
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: `spark.stop()` releases resources used by the Spark session.
